@@ -10,21 +10,21 @@ public class LoginPage extends TestBase {
 	
 	//we have to define page factory or OR object repository  
 	//defining page libraries 
-	@FindBy(name="username")
-	WebElement username;
+	@FindBy(name="email")
+	WebElement email;
    
 	
 	@FindBy(name ="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@type='submit']")
+	@FindBy(xpath="//div[text()='Login']")
 	WebElement loginBtn;
 	
 	@FindBy(linkText="Sign Up")
 	WebElement signUpLink;
 	
-	@FindBy(xpath="(//img[contains(@class,'img-responsive')])[1]")
-	WebElement CrmProLogo;
+//	@FindBy(xpath="(//img[contains(@class,'img-responsive')])[1]")
+//	WebElement CrmProLogo;
 	
 	
 	//initialization of page objects or OR
@@ -40,15 +40,20 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	public boolean validateCrmImg() {
-		return CrmProLogo.isDisplayed();	
+//	public boolean validateCrmImg() {
+//		return CrmProLogo.isDisplayed();	
+//	}
+	public boolean validateEmailBnIsDisplayed() {
+		boolean isDispalyedbtn=email.isDisplayed();
+		return isDispalyedbtn;
+		
 	}
 	
-	public void login(String un,String pwd) {
-		username.sendKeys(un);
+	public HomePage login(String em,String pwd) {
+		email.sendKeys(em);
 		password.sendKeys(pwd);
 		loginBtn.click();
-		//return new HomePage();
+		return new HomePage();
 	}
 	
 	//this method is returning Home page 

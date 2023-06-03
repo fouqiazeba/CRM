@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 02 11:52:52 IST 2023</td>
+<td>Started on:</td><td>Sat Jun 03 22:37:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19177 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11528 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.qa.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.crm.qa.testcases.LoginPageTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:49)
-	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:40)
+<td title='com.crm.qa.testcases.HomePageTest.validateHomePageTitle()'><b>validateHomePageTitle</b><br>Test class: com.crm.qa.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.crm.qa.pages.LoginPage.login(String, String)&quot; because &quot;this.loginpageobj&quot; is null
+	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:46)
+	at com.crm.qa.testcases.HomePageTest.validateHomePageTitle(HomePageTest.java:34)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -111,15 +106,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace836397870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace836397870'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:49)
-	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:40)
+</pre></div><a href='#' onClick='toggleBox("stack-trace700837405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700837405'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.crm.qa.pages.LoginPage.login(String, String)&quot; because &quot;this.loginpageobj&quot; is null
+	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:46)
+	at com.crm.qa.testcases.HomePageTest.validateHomePageTitle(HomePageTest.java:34)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -148,7 +138,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.crm.qa.testcases.LoginPageTest@35cabb2a</td></tr>
+<td>com.crm.qa.testcases.HomePageTest@35cabb2a</td></tr>
 </table><p>
 </body>
 </html>

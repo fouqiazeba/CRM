@@ -27,17 +27,24 @@ public class LoginPageTest extends TestBase{
 	public void loginPageTitleTest() {
 		String title= loginpageobj.validateLoginPageTitle();
 		System.out.println(title);
-		Assert.assertEquals(title, "Free CRM - CRM software for customer relationship management, sales, and support.");
+		Assert.assertEquals(title, "Cogmento CRM");
+	}
+	//@Test(priority=2)
+//	public void crmLogoImageTest() {
+//		boolean flag=loginpageobj.validateCrmImg();
+//		Assert.assertTrue(flag);
+//	}
+	@Test(priority=3)
+	public void emailIsDisplayed() {
+		boolean emailISDisplay=loginpageobj.validateEmailBnIsDisplayed();
+		//return emailISDisplay;
+		System.out.println(emailISDisplay);
+		
 	}
 	@Test(priority=2)
-	public void crmLogoImageTest() {
-		boolean flag=loginpageobj.validateCrmImg();
-		Assert.assertTrue(flag);
-	}
-	@Test(priority=3)
 	public void loginTest() {
-	//homepageobj  =	loginpageobj.login(prop.getProperty("username"), prop.getProperty("password"));
-	loginpageobj.login(prop.getProperty("username"), prop.getProperty("password"));
+	homepageobj  =	loginpageobj.login(prop.getProperty("emailid"), prop.getProperty("password"));
+	//loginpageobj.login(prop.getProperty("emailid"), prop.getProperty("password"));
 	}
 	
 	@AfterMethod
